@@ -1,12 +1,8 @@
 export class CommonPageElements{
-    static get topMenu(){
+    static get Menu(){
         return {
-            get myAccount(){
-                return cy.get('#widget-navbar-217834 > .navbar-nav > :nth-child(6) > .nav-link')
-            },
-
             get register(){
-                return cy.get('#widget-navbar-217834 > .navbar-nav > :nth-child(6) > .nav-link')
+                return cy.get('#loginPanel > :nth-child(3) > a')
             },
         }
     }

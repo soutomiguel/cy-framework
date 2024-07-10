@@ -5,12 +5,8 @@ export class CommonPageHelper{
     static navigateToTheApp(){
         cy.visit(CommonConstants.appUrl)
     }
-
-    static focusOnMyAccountButton(){
-        CommonPageElements.topMenu.myAccount.focus()
-    }
-
+    
     static clickOnRegisterButton(){
-        CommonPageElements.topMenu.register.click()
+        CommonPageElements.Menu.register.click()
     }
 }
