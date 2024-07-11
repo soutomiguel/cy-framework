@@ -22,7 +22,7 @@ export class RegisterElements{
             },
 
             get zipCode(){
-                return cy.get('input[name="customer.lastName"]')
+                return cy.get('input[name="customer.address.zipCode"]')
             },
 
             get phone(){
@@ -32,16 +32,14 @@ export class RegisterElements{
             get ssn(){
                 return cy.get('input[name="customer.ssn"]')
             },
-
             get username(){
                 return cy.get('input[name="customer.username"]')
             },
-
             get password(){
                 return cy.get('input[name="customer.password"]')
             },
 
-            get lastname(){
+            get repeatPassword(){
                 return cy.get('input#repeatedPassword')
             },
 
