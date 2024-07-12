@@ -2,13 +2,16 @@ export class CommonPageElements{
     static get navbar(){
         return {
             get signUp(){
-                return cy.get('a[data-target="#signInModal"]')
+                return cy.get('#signin2')
             },
             get SignIn(){
-                return cy.get('a[data-target="#logInModal"]')
+                return cy.get('#login2')
             },
             get cart(){
-                return cy.get('a#cartur')
+                return
+            },
+            get nameOfUser(){
+                return cy.get('#nameofuser')
             }
         }
     }
